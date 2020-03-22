@@ -1,0 +1,303 @@
+EESchema Schematic File Version 4
+LIBS:synth-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5E69BCF0
+P 6400 4150
+AR Path="/5E4A00E6/5E69BCF0" Ref="R?"  Part="1" 
+AR Path="/5E69BCF0" Ref="R?"  Part="1" 
+AR Path="/5E69BAF5/5E69BCF0" Ref="R?"  Part="1" 
+F 0 "R?" V 6475 4150 50  0000 L CNN
+F 1 "10k" V 6400 4100 39  0000 L CNN
+F 2 "" V 6330 4150 50  0001 C CNN
+F 3 "~" H 6400 4150 50  0001 C CNN
+	1    6400 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E69BCF7
+P 6400 3450
+AR Path="/5E4A00E6/5E69BCF7" Ref="R?"  Part="1" 
+AR Path="/5E69BCF7" Ref="R?"  Part="1" 
+AR Path="/5E69BAF5/5E69BCF7" Ref="R?"  Part="1" 
+F 0 "R?" V 6475 3450 50  0000 L CNN
+F 1 "10k" V 6400 3400 39  0000 L CNN
+F 2 "" V 6330 3450 50  0001 C CNN
+F 3 "~" H 6400 3450 50  0001 C CNN
+	1    6400 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 3200 6400 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5E69BCFF
+P 6400 4500
+AR Path="/5E69BCFF" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A00E6/5E69BCFF" Ref="#PWR?"  Part="1" 
+AR Path="/5E69BAF5/5E69BCFF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6400 4250 50  0001 C CNN
+F 1 "GND" H 6405 4327 50  0000 C CNN
+F 2 "" H 6400 4500 50  0001 C CNN
+F 3 "" H 6400 4500 50  0001 C CNN
+	1    6400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3800 6750 3800
+Connection ~ 6400 3800
+Wire Wire Line
+	6400 3800 6400 4000
+Wire Wire Line
+	6400 3600 6400 3800
+$Comp
+L custom:SCD7805BTG U?
+U 1 1 5E69BD0B
+P 4250 3750
+AR Path="/5E4A00E6/5E69BD0B" Ref="U?"  Part="1" 
+AR Path="/5E69BD0B" Ref="U?"  Part="1" 
+AR Path="/5E69BAF5/5E69BD0B" Ref="U?"  Part="1" 
+F 0 "U?" H 4100 4000 50  0000 C CNN
+F 1 "SCD7805BTG" H 4050 3900 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 4250 2950 50  0001 C CIN
+F 3 "~/datasheets/SCD7805BTG.pdf" H 4250 3050 50  0001 C CNN
+	1    4250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:VDD_BAT #PWR?
+U 1 1 5E69BD18
+P 3700 3550
+AR Path="/5E4A00E6/5E69BD18" Ref="#PWR?"  Part="1" 
+AR Path="/5E69BD18" Ref="#PWR?"  Part="1" 
+AR Path="/5E69BAF5/5E69BD18" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3900 3600 50  0001 C CNN
+F 1 "VDD_BAT" H 3550 3700 50  0000 L BNN
+F 2 "" H 3700 3550 50  0001 C CNN
+F 3 "" H 3700 3550 50  0001 C CNN
+	1    3700 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3550 3700 3750
+Wire Wire Line
+	3700 3750 3900 3750
+$Comp
+L power:+5V #PWR?
+U 1 1 5E69BD20
+P 4850 3550
+AR Path="/5E4A00E6/5E69BD20" Ref="#PWR?"  Part="1" 
+AR Path="/5E69BD20" Ref="#PWR?"  Part="1" 
+AR Path="/5E69BAF5/5E69BD20" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 3400 50  0001 C CNN
+F 1 "+5V" H 4850 3690 50  0000 C CNN
+F 2 "" H 4850 3550 50  0001 C CNN
+F 3 "" H 4850 3550 50  0001 C CNN
+	1    4850 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3750 4850 3750
+Wire Wire Line
+	4850 3750 4850 3550
+$Comp
+L power:GND #PWR?
+U 1 1 5E69BD28
+P 4250 4500
+AR Path="/5E69BD28" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A00E6/5E69BD28" Ref="#PWR?"  Part="1" 
+AR Path="/5E69BAF5/5E69BD28" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4250 4250 50  0001 C CNN
+F 1 "GND" H 4255 4327 50  0000 C CNN
+F 2 "" H 4250 4500 50  0001 C CNN
+F 3 "" H 4250 4500 50  0001 C CNN
+	1    4250 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4500 4250 4300
+$Comp
+L power:+5V #PWR?
+U 1 1 5E69BD12
+P 6400 3200
+AR Path="/5E4A00E6/5E69BD12" Ref="#PWR?"  Part="1" 
+AR Path="/5E69BD12" Ref="#PWR?"  Part="1" 
+AR Path="/5E69BAF5/5E69BD12" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6400 3050 50  0001 C CNN
+F 1 "+5V" H 6400 3340 50  0000 C CNN
+F 2 "" H 6400 3200 50  0001 C CNN
+F 3 "" H 6400 3200 50  0001 C CNN
+	1    6400 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 7300 3800 2    50   Output ~ 0
+HI_Z_REF
+Wire Wire Line
+	6750 3750 6750 3800
+Connection ~ 6750 3800
+Wire Wire Line
+	6750 3800 7150 3800
+Wire Wire Line
+	3650 3750 3700 3750
+Connection ~ 3700 3750
+Wire Wire Line
+	4300 4300 4250 4300
+Connection ~ 4250 4300
+Wire Wire Line
+	4250 4300 4250 4100
+$Comp
+L custom:PTH_1_mm TP?
+U 1 1 5E61F9DD
+P 6750 3600
+AR Path="/5E4A00E6/5E61F9DD" Ref="TP?"  Part="1" 
+AR Path="/5E69BAF5/5E61F9DD" Ref="TP?"  Part="1" 
+F 0 "TP?" V 6850 3550 50  0000 L BNN
+F 1 "PTH_1_mm" V 6900 3400 50  0001 L BNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6550 3350 50  0001 L BNN
+F 3 "" H 6750 3700 50  0001 L BNN
+	1    6750 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L custom:PTH_1_mm TP?
+U 1 1 5E61FC80
+P 5050 3750
+AR Path="/5E4A00E6/5E61FC80" Ref="TP?"  Part="1" 
+AR Path="/5E69BAF5/5E61FC80" Ref="TP?"  Part="1" 
+F 0 "TP?" H 5100 3750 50  0000 L BNN
+F 1 "PTH_1_mm" V 5200 3550 50  0001 L BNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 4850 3500 50  0001 L BNN
+F 3 "" H 5050 3850 50  0001 L BNN
+	1    5050 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3750 4850 3750
+Connection ~ 4850 3750
+$Comp
+L custom:PTH_1_mm TP?
+U 1 1 5E6200E9
+P 3500 3750
+AR Path="/5E4A00E6/5E6200E9" Ref="TP?"  Part="1" 
+AR Path="/5E69BAF5/5E6200E9" Ref="TP?"  Part="1" 
+F 0 "TP?" H 3550 3750 50  0000 L BNN
+F 1 "PTH_1_mm" V 3650 3550 50  0001 L BNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3300 3500 50  0001 L BNN
+F 3 "" H 3500 3850 50  0001 L BNN
+	1    3500 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L custom:PTH_1_mm TP?
+U 1 1 5E62014F
+P 4450 4300
+AR Path="/5E4A00E6/5E62014F" Ref="TP?"  Part="1" 
+AR Path="/5E69BAF5/5E62014F" Ref="TP?"  Part="1" 
+F 0 "TP?" H 4500 4300 50  0000 L BNN
+F 1 "PTH_1_mm" V 4600 4100 50  0001 L BNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 4250 4050 50  0001 L BNN
+F 3 "" H 4450 4400 50  0001 L BNN
+	1    4450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5E7C023F
+P 5250 5450
+F 0 "JP?" H 5250 5530 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5250 5350 50  0001 C CNN
+F 2 "" H 5250 5450 50  0001 C CNN
+F 3 "~" H 5250 5450 50  0001 C CNN
+	1    5250 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:VDD_BAT #PWR?
+U 1 1 5E7C0A6B
+P 4900 5250
+AR Path="/5E4A00E6/5E7C0A6B" Ref="#PWR?"  Part="1" 
+AR Path="/5E7C0A6B" Ref="#PWR?"  Part="1" 
+AR Path="/5E69BAF5/5E7C0A6B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5100 5300 50  0001 C CNN
+F 1 "VDD_BAT" H 4750 5400 50  0000 L BNN
+F 2 "" H 4900 5250 50  0001 C CNN
+F 3 "" H 4900 5250 50  0001 C CNN
+	1    4900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E7C0A88
+P 5600 5250
+AR Path="/5E4A00E6/5E7C0A88" Ref="#PWR?"  Part="1" 
+AR Path="/5E7C0A88" Ref="#PWR?"  Part="1" 
+AR Path="/5E69BAF5/5E7C0A88" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5600 5100 50  0001 C CNN
+F 1 "+5V" H 5600 5390 50  0000 C CNN
+F 2 "" H 5600 5250 50  0001 C CNN
+F 3 "" H 5600 5250 50  0001 C CNN
+	1    5600 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5250 4900 5450
+Wire Wire Line
+	4900 5450 5100 5450
+Wire Wire Line
+	5400 5450 5600 5450
+Wire Wire Line
+	5600 5450 5600 5250
+Text Notes 4700 5950 0    50   ~ 0
+SILKSCREEN:\nWARNING: DO NOT CONNECT\nUNLESS BOARD IS CONVERTED\nTO OPERATE AT HIGHER VOLTAGES.\nALTERNATIVE PARTS REQUIRED.
+$Comp
+L Device:CP1 C?
+U 1 1 5E7C9010
+P 7150 4150
+F 0 "C?" H 7175 4250 50  0000 L CNN
+F 1 "NP" H 7175 4050 50  0000 L CNN
+F 2 "" H 7150 4150 50  0001 C CNN
+F 3 "~" H 7150 4150 50  0001 C CNN
+	1    7150 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4000 7150 3800
+Connection ~ 7150 3800
+Wire Wire Line
+	7150 3800 7300 3800
+$Comp
+L power:GND #PWR?
+U 1 1 5E7C9456
+P 7150 4500
+AR Path="/5E7C9456" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A00E6/5E7C9456" Ref="#PWR?"  Part="1" 
+AR Path="/5E69BAF5/5E7C9456" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7150 4250 50  0001 C CNN
+F 1 "GND" H 7155 4327 50  0000 C CNN
+F 2 "" H 7150 4500 50  0001 C CNN
+F 3 "" H 7150 4500 50  0001 C CNN
+	1    7150 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4500 7150 4300
+Wire Wire Line
+	6400 4300 6400 4500
+Text Notes 5000 2400 0    50   ~ 0
+NEED TO ADD BATTERY HOLDER
+$EndSCHEMATC

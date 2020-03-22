@@ -1,0 +1,535 @@
+EESchema Schematic File Version 4
+LIBS:synth-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5E4A04C8
+P 7600 4000
+AR Path="/5E4A04C8" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A00E6/5E4A04C8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7600 3750 50  0001 C CNN
+F 1 "GND" H 7605 3827 50  0000 C CNN
+F 2 "" H 7600 4000 50  0001 C CNN
+F 3 "" H 7600 4000 50  0001 C CNN
+	1    7600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:VDD_BAT #PWR?
+U 1 1 5E4A04CE
+P 6600 2700
+AR Path="/5E4A04CE" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A00E6/5E4A04CE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6800 2750 50  0001 C CNN
+F 1 "VDD_BAT" H 6605 2873 50  0000 C CNN
+F 2 "" H 6600 2700 50  0001 C CNN
+F 3 "" H 6600 2700 50  0001 C CNN
+	1    6600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2700 6600 3100
+Wire Wire Line
+	6600 3100 6700 3100
+Wire Wire Line
+	7600 3700 7500 3700
+$Comp
+L custom:SE555P U?
+U 1 1 5E4A04D8
+P 7100 3600
+AR Path="/5E4A04D8" Ref="U?"  Part="1" 
+AR Path="/5E4A00E6/5E4A04D8" Ref="U?"  Part="1" 
+F 0 "U?" H 6900 4250 50  0000 C CNN
+F 1 "SE555P" H 7100 3325 50  0000 C CNN
+F 2 "" H 7100 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 7100 3600 50  0001 C CNN
+	1    7100 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3300 6600 3300
+Wire Wire Line
+	6600 3300 6600 3500
+Wire Wire Line
+	6600 3500 6700 3500
+Wire Wire Line
+	7500 3300 7700 3300
+Wire Wire Line
+	7700 3300 7700 2700
+$Comp
+L custom:VDD_BAT #PWR?
+U 1 1 5E4A3BBF
+P 7700 2700
+AR Path="/5E4A3BBF" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A00E6/5E4A3BBF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7900 2750 50  0001 C CNN
+F 1 "VDD_BAT" H 7705 2873 50  0000 C CNN
+F 2 "" H 7700 2700 50  0001 C CNN
+F 3 "" H 7700 2700 50  0001 C CNN
+	1    7700 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4000 7600 3700
+NoConn ~ 7500 3500
+$Comp
+L Device:CP1 C?
+U 1 1 5E4A89C1
+P 5000 3300
+F 0 "C?" V 4748 3300 50  0000 C CNN
+F 1 "10uF" V 4839 3300 50  0000 C CNN
+F 2 "" H 5000 3300 50  0001 C CNN
+F 3 "~" H 5000 3300 50  0001 C CNN
+	1    5000 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 3850 5400 3850
+Wire Wire Line
+	5400 3850 5400 3300
+Wire Wire Line
+	5400 3300 5150 3300
+Wire Wire Line
+	4850 3300 4500 3300
+Wire Wire Line
+	4500 3750 4700 3750
+$Comp
+L custom:VDD_BAT #PWR?
+U 1 1 5E4B38F7
+P 1200 4400
+AR Path="/5E4B38F7" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A00E6/5E4B38F7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1400 4450 50  0001 C CNN
+F 1 "VDD_BAT" H 1205 4573 50  0000 C CNN
+F 2 "" H 1200 4400 50  0001 C CNN
+F 3 "" H 1200 4400 50  0001 C CNN
+	1    1200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E4B3916
+P 1200 5200
+AR Path="/5E4B3916" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A00E6/5E4B3916" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1200 4950 50  0001 C CNN
+F 1 "GND" H 1205 5027 50  0000 C CNN
+F 2 "" H 1200 5200 50  0001 C CNN
+F 3 "" H 1200 5200 50  0001 C CNN
+	1    1200 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 5200 1200 5100
+Wire Wire Line
+	1200 4500 1200 4400
+Wire Wire Line
+	7500 3100 7600 3100
+Wire Wire Line
+	7600 3100 7600 2850
+Connection ~ 6600 3300
+Text Notes 4850 2600 0    50   ~ 0
+UPDATE SYMBOL
+Wire Notes Line
+	5350 2650 5150 3100
+$Comp
+L Device:R_POT RV?
+U 1 1 5E4DC6F4
+P 3650 3750
+F 0 "RV?" V 3550 3850 50  0000 R CNN
+F 1 "10k" V 3650 3800 39  0000 R CNN
+F 2 "" H 3650 3750 50  0001 C CNN
+F 3 "~" H 3650 3750 50  0001 C CNN
+	1    3650 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L custom:VDD_BAT #PWR?
+U 1 1 5E4DE268
+P 1200 1300
+AR Path="/5E4DE268" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A00E6/5E4DE268" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1400 1350 50  0001 C CNN
+F 1 "VDD_BAT" H 1205 1473 50  0000 C CNN
+F 2 "" H 1200 1300 50  0001 C CNN
+F 3 "" H 1200 1300 50  0001 C CNN
+	1    1200 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 7600 2850
+$Comp
+L Device:R R?
+U 1 1 5E4B0544
+P 1200 2250
+F 0 "R?" V 1275 2250 50  0000 L CNN
+F 1 "10k" V 1200 2200 39  0000 L CNN
+F 2 "" V 1130 2250 50  0001 C CNN
+F 3 "~" H 1200 2250 50  0001 C CNN
+	1    1200 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E4B04E8
+P 1200 1550
+F 0 "R?" V 1275 1550 50  0000 L CNN
+F 1 "10k" V 1200 1500 39  0000 L CNN
+F 2 "" V 1130 1550 50  0001 C CNN
+F 3 "~" H 1200 1550 50  0001 C CNN
+	1    1200 1550
+	-1   0    0    1   
+$EndComp
+Text Label 6250 3300 2    50   ~ 0
+TRIANGLE
+Text Label 9800 2950 2    50   ~ 0
+SQUARE
+Wire Wire Line
+	1200 1300 1200 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5E5A0F5C
+P 1200 2550
+AR Path="/5E5A0F5C" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A00E6/5E5A0F5C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1200 2300 50  0001 C CNN
+F 1 "GND" H 1205 2377 50  0000 C CNN
+F 2 "" H 1200 2550 50  0001 C CNN
+F 3 "" H 1200 2550 50  0001 C CNN
+	1    1200 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2550 1200 2400
+Wire Wire Line
+	1200 1900 1650 1900
+Wire Wire Line
+	2850 3400 2650 3400
+Wire Wire Line
+	2650 2850 7600 2850
+Wire Wire Line
+	3450 3500 3650 3500
+Text Notes 2750 3050 0    50   ~ 0
+MAKE SURE CLOCKWISE = INCREASE FREQ
+Wire Notes Line
+	3550 3100 3600 3550
+Wire Wire Line
+	3650 3600 3650 3500
+Wire Wire Line
+	9300 2950 9400 2950
+Text Label 1650 1900 2    50   ~ 0
+HI_Z_REF
+$Comp
+L Device:R R?
+U 1 1 5E5C7217
+P 8200 2850
+F 0 "R?" V 8275 2850 50  0000 L CNN
+F 1 "30k" V 8200 2800 39  0000 L CNN
+F 2 "" V 8130 2850 50  0001 C CNN
+F 3 "~" H 8200 2850 50  0001 C CNN
+	1    8200 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E5C74B1
+P 8950 2450
+F 0 "R?" V 9025 2450 50  0000 L CNN
+F 1 "10k" V 8950 2400 39  0000 L CNN
+F 2 "" V 8880 2450 50  0001 C CNN
+F 3 "~" H 8950 2450 50  0001 C CNN
+	1    8950 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7600 2850 8050 2850
+Wire Wire Line
+	9400 2950 9400 2450
+Wire Wire Line
+	8450 2450 8450 2850
+Connection ~ 9400 2950
+Wire Wire Line
+	9400 2950 9800 2950
+Connection ~ 8450 2850
+Wire Wire Line
+	8450 2850 8350 2850
+Wire Wire Line
+	8450 2850 8700 2850
+Wire Wire Line
+	8800 2450 8450 2450
+Wire Wire Line
+	9100 2450 9400 2450
+$Comp
+L custom:VDD_BAT #PWR?
+U 1 1 5E5DC63A
+P 4500 2000
+AR Path="/5E5DC63A" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A00E6/5E5DC63A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4700 2050 50  0001 C CNN
+F 1 "VDD_BAT" H 4505 2173 50  0000 C CNN
+F 2 "" H 4500 2000 50  0001 C CNN
+F 3 "" H 4500 2000 50  0001 C CNN
+	1    4500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PNP_EBC Q?
+U 1 1 5E5DC732
+P 4600 2350
+F 0 "Q?" H 4800 2400 50  0000 L CNN
+F 1 "Q_PNP_EBC" H 4800 2300 50  0000 L CNN
+F 2 "" H 4800 2450 50  0001 C CNN
+F 3 "~" H 4600 2350 50  0001 C CNN
+	1    4600 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E5DC833
+P 6450 3700
+F 0 "R?" V 6525 3700 50  0000 L CNN
+F 1 "10k" V 6450 3650 39  0000 L CNN
+F 2 "" V 6380 3700 50  0001 C CNN
+F 3 "~" H 6450 3700 50  0001 C CNN
+	1    6450 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 3700 5800 3700
+Wire Wire Line
+	4500 2000 4500 2150
+Wire Wire Line
+	2650 3400 2650 2850
+Wire Wire Line
+	3500 3750 3400 3750
+NoConn ~ 3400 3750
+$Comp
+L Device:R R?
+U 1 1 5E5F718D
+P 4500 3050
+F 0 "R?" V 4575 3050 50  0000 L CNN
+F 1 "330" V 4500 3000 39  0000 L CNN
+F 2 "" V 4430 3050 50  0001 C CNN
+F 3 "~" H 4500 3050 50  0001 C CNN
+	1    4500 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 3200 4500 3300
+Connection ~ 4500 3300
+Wire Wire Line
+	4500 2900 4500 2550
+$Comp
+L custom:LMC660 U?
+U 1 1 5E4D10FE
+P 3150 3500
+F 0 "U?" H 3000 3250 50  0000 L CNN
+F 1 "LMC660" H 2950 3750 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 3150 2900 50  0001 C CNN
+F 3 "~/datasheets/LMC660.pdf" H 3150 3050 50  0001 C CNN
+	1    3150 3500
+	1    0    0    1   
+$EndComp
+$Comp
+L custom:LMC660 U?
+U 2 1 5E4D15AC
+P 5000 3850
+F 0 "U?" H 4900 3600 50  0000 L CNN
+F 1 "LMC660" H 4800 4100 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5000 3250 50  0001 C CNN
+F 3 "~/datasheets/LMC660.pdf" H 5000 3400 50  0001 C CNN
+	2    5000 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L custom:LMC660 U?
+U 3 1 5E4D1717
+P 9000 2950
+F 0 "U?" H 8900 2700 50  0000 L CNN
+F 1 "LMC660" H 8800 3250 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 9000 2350 50  0001 C CNN
+F 3 "~/datasheets/LMC660.pdf" H 9000 2500 50  0001 C CNN
+	3    9000 2950
+	1    0    0    1   
+$EndComp
+$Comp
+L custom:LMC660 U?
+U 5 1 5E4D1BBB
+P 1300 4800
+F 0 "U?" H 1300 5000 50  0000 L CNN
+F 1 "LMC660" H 1300 4600 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1300 4200 50  0001 C CNN
+F 3 "~/datasheets/LMC660.pdf" H 1300 4350 50  0001 C CNN
+	5    1300 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:LMC660 U?
+U 4 1 5E4D1D0C
+P 4200 5950
+F 0 "U?" H 4100 5700 50  0000 L CNN
+F 1 "LMC660" H 4000 6250 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 4200 5350 50  0001 C CNN
+F 3 "~/datasheets/LMC660.pdf" H 4200 5500 50  0001 C CNN
+	4    4200 5950
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E4EA533
+P 4200 3750
+F 0 "R?" V 4275 3750 50  0000 L CNN
+F 1 "680" V 4200 3700 39  0000 L CNN
+F 2 "" V 4130 3750 50  0001 C CNN
+F 3 "~" H 4200 3750 50  0001 C CNN
+	1    4200 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 3750 4500 3750
+Connection ~ 4500 3750
+Wire Wire Line
+	4500 3300 4500 3750
+Wire Wire Line
+	3800 3750 4050 3750
+$Comp
+L custom:R20407RN02Q U?
+U 1 1 5E50D4A3
+P 8600 5550
+F 0 "U?" H 8680 5972 50  0000 C CNN
+F 1 "R20407RN02Q" H 8616 5024 50  0000 C CNN
+F 2 "" H 8600 5550 50  0001 C CNN
+F 3 "" H 8600 5550 50  0001 C CNN
+	1    8600 5550
+	1    0    0    -1  
+$EndComp
+Text Label 9700 5950 2    50   ~ 0
+SQUARE
+Wire Wire Line
+	9150 5950 9700 5950
+Wire Wire Line
+	8050 5750 7250 5750
+Text Label 7250 5750 0    50   ~ 0
+TRIANGLE
+Wire Wire Line
+	8050 5350 7250 5350
+Text Label 7250 5350 0    50   ~ 0
+INV_TRIANGLE
+Wire Wire Line
+	8050 5550 7950 5550
+Wire Wire Line
+	7950 5550 7950 5950
+Wire Wire Line
+	7950 5950 8050 5950
+Wire Wire Line
+	7950 5950 7250 5950
+Connection ~ 7950 5950
+Wire Wire Line
+	6600 3700 6700 3700
+Text Label 5800 3700 0    50   ~ 0
+DISCHARGE
+Wire Wire Line
+	5400 3300 6600 3300
+Connection ~ 5400 3300
+Wire Wire Line
+	4800 2350 5200 2350
+Text HLabel 7250 5950 0    50   Input ~ 0
+FREQ_VFO_OUT
+Wire Wire Line
+	9150 5750 9700 5750
+Text Label 9700 5750 2    50   ~ 0
+DISCHARGE
+Text Label 5200 2350 2    50   ~ 0
+SAW_EN
+Wire Wire Line
+	9150 5350 9700 5350
+Text Label 9700 5350 2    50   ~ 0
+DISCHARGE
+Wire Wire Line
+	9150 5550 9700 5550
+Text Label 9700 5550 2    50   ~ 0
+SAW_EN
+NoConn ~ 9150 5150
+NoConn ~ 8050 5150
+Wire Wire Line
+	3200 5850 2700 5850
+Text Label 2700 5850 0    50   ~ 0
+TRIANGLE
+$Comp
+L Device:R R?
+U 1 1 5E55F510
+P 4200 5450
+F 0 "R?" V 4275 5450 50  0000 L CNN
+F 1 "10k" V 4200 5400 39  0000 L CNN
+F 2 "" V 4130 5450 50  0001 C CNN
+F 3 "~" H 4200 5450 50  0001 C CNN
+	1    4200 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 5950 4650 5450
+Wire Wire Line
+	3700 5450 3700 5850
+Wire Wire Line
+	4050 5450 3700 5450
+Wire Wire Line
+	4350 5450 4650 5450
+$Comp
+L Device:R R?
+U 1 1 5E563A52
+P 3350 5850
+F 0 "R?" V 3425 5850 50  0000 L CNN
+F 1 "10k" V 3350 5800 39  0000 L CNN
+F 2 "" V 3280 5850 50  0001 C CNN
+F 3 "~" H 3350 5850 50  0001 C CNN
+	1    3350 5850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 5850 3700 5850
+Connection ~ 3700 5850
+Wire Wire Line
+	3700 5850 3900 5850
+Wire Wire Line
+	4100 3950 4700 3950
+Text Label 4100 3950 0    50   ~ 0
+HI_Z_REF
+Wire Wire Line
+	2250 3600 2850 3600
+Text Label 2250 3600 0    50   ~ 0
+HI_Z_REF
+Wire Wire Line
+	8100 3050 8700 3050
+Text Label 8100 3050 0    50   ~ 0
+HI_Z_REF
+Wire Wire Line
+	3300 6050 3900 6050
+Text Label 3300 6050 0    50   ~ 0
+HI_Z_REF
+Connection ~ 1200 1900
+Wire Wire Line
+	1200 1900 1200 2100
+Wire Wire Line
+	1200 1700 1200 1900
+Text Label 5350 5950 2    50   ~ 0
+INV_TRIANGLE
+Wire Wire Line
+	4500 5950 4650 5950
+Connection ~ 4650 5950
+Wire Wire Line
+	4650 5950 5350 5950
+Text Notes 5150 4800 0    50   ~ 0
+ADD AMP/ATTEN + OFFSET STAGE
+$EndSCHEMATC
