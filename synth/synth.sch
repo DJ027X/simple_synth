@@ -29,7 +29,7 @@ $EndSheet
 $Sheet
 S 3650 1050 1050 750 
 U 5E826FFF
-F0 "AMP" 50
-F1 "AMP.sch" 50
+F0 "OUTPUT" 50
+F1 "OUTPUT.sch" 50
 $EndSheet
 $EndSCHEMATC
