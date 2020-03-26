@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/dj/simple_synth/synth/synth.sch)
-    (date "Wed 25 Mar 2020 11:01:38 PM EDT")
+    (date "Thu 26 Mar 2020 12:05:35 AM EDT")
     (tool "Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -431,7 +431,7 @@
       (tstamp 5E8344F0))
     (comp (ref U4)
       (value MCP6002)
-      (footprint Package_DIP:DIP-14_W7.62mm_Socket)
+      (footprint Package_DIP:DIP-8_W7.62mm)
       (datasheet ~/datasheets/MCP6004.pdf)
       (libsource (lib custom) (part MCP6002) (description "Dual Operational Amplifier DIP"))
       (sheetpath (names /OUTPUT/) (tstamps /5E826FFF/))

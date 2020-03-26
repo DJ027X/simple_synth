@@ -556,7 +556,7 @@ AR Path="/5E4A013A/5E78F67C" Ref="SW1"  Part="1"
 AR Path="/5E826FFF/5E78F67C" Ref="SW?"  Part="1" 
 F 0 "SW1" H 7000 5270 50  0000 C CNN
 F 1 "SW_SPDT" H 7000 4900 50  0001 C CNN
-F 2 "" H 7000 5100 50  0001 C CNN
+F 2 "custom:OS102011MS2QN1" H 7000 5100 50  0001 C CNN
 F 3 "" H 7000 5100 50  0001 C CNN
 	1    7000 5100
 	-1   0    0    -1  
@@ -587,7 +587,7 @@ AR Path="/5E4A013A/5E78F68D" Ref="RV3"  Part="1"
 AR Path="/5E826FFF/5E78F68D" Ref="RV?"  Part="1" 
 F 0 "RV3" V 8000 4900 50  0000 R CNN
 F 1 "10k" V 8100 4850 39  0000 R CNN
-F 2 "" H 8100 4800 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 8100 4800 50  0001 C CNN
 F 3 "~" H 8100 4800 50  0001 C CNN
 	1    8100 4800
 	1    0    0    1   
@@ -651,7 +651,7 @@ AR Path="/5E4A013A/5E78F6AC" Ref="RV4"  Part="1"
 AR Path="/5E826FFF/5E78F6AC" Ref="RV?"  Part="1" 
 F 0 "RV4" V 7850 5850 50  0000 R CNN
 F 1 "10k" V 7950 5800 39  0000 R CNN
-F 2 "" H 7950 5750 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 7950 5750 50  0001 C CNN
 F 3 "~" H 7950 5750 50  0001 C CNN
 	1    7950 5750
 	1    0    0    1   
@@ -675,7 +675,7 @@ AR Path="/5E4A013A/5E78F6B8" Ref="RV2"  Part="1"
 AR Path="/5E826FFF/5E78F6B8" Ref="RV?"  Part="1" 
 F 0 "RV2" V 5900 2350 50  0000 R CNN
 F 1 "10k" V 6000 2300 39  0000 R CNN
-F 2 "" H 6000 2250 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 6000 2250 50  0001 C CNN
 F 3 "~" H 6000 2250 50  0001 C CNN
 	1    6000 2250
 	1    0    0    1   
@@ -815,7 +815,7 @@ AR Path="/5E4A013A/5E78F70A" Ref="RV1"  Part="1"
 AR Path="/5E826FFF/5E78F70A" Ref="RV?"  Part="1" 
 F 0 "RV1" V 3700 2000 50  0000 R CNN
 F 1 "10k" V 3800 1950 39  0000 R CNN
-F 2 "" H 3800 1900 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 3800 1900 50  0001 C CNN
 F 3 "~" H 3800 1900 50  0001 C CNN
 	1    3800 1900
 	1    0    0    1   
