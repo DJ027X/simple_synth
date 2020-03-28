@@ -79,7 +79,7 @@ U 1 1 5E8371D5
 P 7000 1450
 F 0 "U4" H 7000 1650 50  0000 L CNN
 F 1 "MCP6002" H 7000 1250 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 7000 850 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 7000 850 50  0001 C CNN
 F 3 "~/datasheets/MCP6004.pdf" H 7000 1000 50  0001 C CNN
 	1    7000 1450
 	1    0    0    -1  
@@ -90,7 +90,7 @@ U 3 1 5E83729E
 P 3700 1850
 F 0 "U4" H 3700 2050 50  0000 L CNN
 F 1 "MCP6002" H 3700 1650 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 3700 1250 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 3700 1250 50  0001 C CNN
 F 3 "~/datasheets/MCP6004.pdf" H 3700 1400 50  0001 C CNN
 	3    3700 1850
 	1    0    0    -1  
@@ -150,7 +150,7 @@ U 2 1 5E837248
 P 2450 5600
 F 0 "U4" H 2450 5800 50  0000 L CNN
 F 1 "MCP6002" H 2450 5400 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 2450 5000 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 2450 5000 50  0001 C CNN
 F 3 "~/datasheets/MCP6004.pdf" H 2450 5150 50  0001 C CNN
 	2    2450 5600
 	1    0    0    -1  
@@ -259,7 +259,7 @@ AR Path="/5E4A013A/5E7F1703" Ref="TP?"  Part="1"
 AR Path="/5E826FFF/5E7F1703" Ref="TP17"  Part="1" 
 F 0 "TP17" H 6100 1550 50  0000 L BNN
 F 1 "PTH_1_mm" H 5900 1450 50  0001 L BNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5850 1300 50  0001 L BNN
+F 2 "custom:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5850 1300 50  0001 L BNN
 F 3 "" H 6050 1650 50  0001 L BNN
 	1    6050 1550
 	-1   0    0    -1  
@@ -409,10 +409,6 @@ Wire Wire Line
 Connection ~ 1950 5700
 Wire Wire Line
 	1950 5700 1700 5700
-Wire Wire Line
-	4250 5600 3600 5600
-Wire Wire Line
-	4250 6600 3600 6600
 Text GLabel 1900 5500 0    50   Input ~ 0
 VFO_OUT
 Wire Wire Line
@@ -460,7 +456,6 @@ Wire Wire Line
 	4550 4850 4550 5000
 Wire Wire Line
 	4550 7200 4550 7350
-Connection ~ 3600 5600
 Connection ~ 4550 6200
 Wire Wire Line
 	4550 6200 4550 6050
@@ -471,24 +466,24 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 5E8668D9
-P 4050 5900
+P 4000 5900
 AR Path="/5E4A00FF/5E8668D9" Ref="R?"  Part="1" 
 AR Path="/5E4A013A/5E8668D9" Ref="R?"  Part="1" 
 AR Path="/5E826FFF/5E8668D9" Ref="R20"  Part="1" 
-F 0 "R20" V 4150 5800 50  0000 L CNN
-F 1 "NP_10k" V 4050 5810 31  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3980 5900 50  0001 C CNN
-F 3 "~" H 4050 5900 50  0001 C CNN
-	1    4050 5900
+F 0 "R20" V 4100 5800 50  0000 L CNN
+F 1 "NP_10k" V 4000 5810 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3930 5900 50  0001 C CNN
+F 3 "~" H 4000 5900 50  0001 C CNN
+	1    4000 5900
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	4200 5900 4550 5900
+	4150 5900 4550 5900
 Connection ~ 4550 5900
 Wire Wire Line
 	4550 5900 4550 5800
 Wire Wire Line
-	3900 5900 3600 5900
+	3850 5900 3600 5900
 Connection ~ 3600 5900
 Wire Wire Line
 	3600 5900 3600 6600
@@ -567,7 +562,7 @@ AR Path="/5E4A013A/5E880781" Ref="TP?"  Part="1"
 AR Path="/5E826FFF/5E880781" Ref="TP18"  Part="1" 
 F 0 "TP18" H 5100 6050 50  0000 L BNN
 F 1 "PTH_1_mm" H 4900 5950 50  0001 L BNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 4850 5800 50  0001 L BNN
+F 2 "custom:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 4850 5800 50  0001 L BNN
 F 3 "" H 5050 6150 50  0001 L BNN
 	1    5050 6050
 	1    0    0    -1  
@@ -576,4 +571,41 @@ Wire Wire Line
 	4550 6050 4900 6050
 Text Label 7300 3750 0    50   ~ 0
 OUTPUT
+$Comp
+L Device:R R?
+U 1 1 5E7FBE4A
+P 4000 6600
+AR Path="/5E4A00FF/5E7FBE4A" Ref="R?"  Part="1" 
+AR Path="/5E4A013A/5E7FBE4A" Ref="R?"  Part="1" 
+AR Path="/5E826FFF/5E7FBE4A" Ref="R25"  Part="1" 
+F 0 "R25" V 4100 6500 50  0000 L CNN
+F 1 "NP_10k" V 4000 6510 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3930 6600 50  0001 C CNN
+F 3 "~" H 4000 6600 50  0001 C CNN
+	1    4000 6600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E7FBEA6
+P 4000 5600
+AR Path="/5E4A00FF/5E7FBEA6" Ref="R?"  Part="1" 
+AR Path="/5E4A013A/5E7FBEA6" Ref="R?"  Part="1" 
+AR Path="/5E826FFF/5E7FBEA6" Ref="R24"  Part="1" 
+F 0 "R24" V 4100 5500 50  0000 L CNN
+F 1 "NP_10k" V 4000 5510 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3930 5600 50  0001 C CNN
+F 3 "~" H 4000 5600 50  0001 C CNN
+	1    4000 5600
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4150 6600 4250 6600
+Wire Wire Line
+	4250 5600 4150 5600
+Wire Wire Line
+	3850 5600 3600 5600
+Connection ~ 3600 5600
+Wire Wire Line
+	3600 6600 3850 6600
 $EndSCHEMATC
