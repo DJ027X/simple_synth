@@ -33,15 +33,15 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5E78F562
-P 5500 3100
+P 5500 2700
 AR Path="/5E4A00FF/5E78F562" Ref="R?"  Part="1" 
 AR Path="/5E4A013A/5E78F562" Ref="R4"  Part="1" 
 AR Path="/5E826FFF/5E78F562" Ref="R?"  Part="1" 
-F 0 "R4" V 5600 3000 50  0000 L CNN
-F 1 "3k3" V 5500 3050 39  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5430 3100 50  0001 C CNN
-F 3 "~" H 5500 3100 50  0001 C CNN
-	1    5500 3100
+F 0 "R4" V 5600 2600 50  0000 L CNN
+F 1 "3k3" V 5500 2650 39  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5430 2700 50  0001 C CNN
+F 3 "~" H 5500 2700 50  0001 C CNN
+	1    5500 2700
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
@@ -260,9 +260,9 @@ F 3 "" H 7100 1700 50  0001 L BNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3250 3625 3250 3100
+	3250 3225 3250 2700
 Wire Wire Line
-	9950 3625 3250 3625
+	9950 3225 3250 3225
 Wire Wire Line
 	3800 1925 3800 2000
 Wire Wire Line
@@ -380,16 +380,16 @@ $EndComp
 Text GLabel 9250 5200 2    50   Output ~ 0
 VFO_OUT
 Wire Wire Line
-	5250 3100 5350 3100
+	5250 2700 5350 2700
 Wire Wire Line
-	5650 3100 5700 3100
+	5650 2700 5700 2700
 Text Notes 8000 4500 0    79   ~ 16
 AMP
 Wire Wire Line
 	3250 2200 3350 2200
-Connection ~ 5250 3100
+Connection ~ 5250 2700
 Wire Wire Line
-	3250 3100 5250 3100
+	3250 2700 5250 2700
 $Comp
 L Device:R R?
 U 1 1 5E78F672
@@ -520,9 +520,9 @@ F 3 "~" H 7950 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 3300 6000 3400
+	6000 2900 6000 3000
 Wire Wire Line
-	6000 1075 6000 1175
+	6000 1500 6000 1600
 $Comp
 L Device:R_POT RV?
 U 1 1 5E78F6B8
@@ -692,26 +692,10 @@ $EndComp
 Wire Wire Line
 	3700 2400 4000 2400
 Wire Wire Line
-	7200 2450 7250 2450
-Wire Wire Line
 	8000 2350 8600 2350
 Connection ~ 6850 2250
 Wire Wire Line
 	6750 2250 6850 2250
-$Comp
-L Device:R R?
-U 1 1 5E78F71D
-P 6600 2250
-AR Path="/5E4A00FF/5E78F71D" Ref="R?"  Part="1" 
-AR Path="/5E4A013A/5E78F71D" Ref="R3"  Part="1" 
-AR Path="/5E826FFF/5E78F71D" Ref="R?"  Part="1" 
-F 0 "R3" V 6675 2250 50  0000 L CNN
-F 1 "NP_100" V 6600 2250 31  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6530 2250 50  0001 C CNN
-F 3 "~" H 6600 2250 50  0001 C CNN
-	1    6600 2250
-	0    -1   -1   0   
-$EndComp
 Text Label 8500 2350 2    50   ~ 0
 TRIANGLE
 Wire Wire Line
@@ -804,7 +788,7 @@ P 7550 1800
 AR Path="/5E4A013A/5E7998A2" Ref="C2"  Part="1" 
 AR Path="/5E826FFF/5E7998A2" Ref="C?"  Part="1" 
 F 0 "C2" V 7500 1600 50  0000 L CNN
-F 1 "10nF" V 7500 1900 50  0000 L CNN
+F 1 "100nF" V 7500 1900 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 7588 1650 50  0001 C CNN
 F 3 "~" H 7550 1800 50  0001 C CNN
 	1    7550 1800
@@ -814,32 +798,6 @@ Wire Wire Line
 	8000 1750 8000 1800
 Wire Wire Line
 	7100 1750 7100 1800
-$Comp
-L Device:Q_NMOS_SGD Q1
-U 1 1 5E7C5A19
-P 5900 1375
-AR Path="/5E4A013A/5E7C5A19" Ref="Q1"  Part="1" 
-AR Path="/5E826FFF/5E7C5A19" Ref="Q?"  Part="1" 
-F 0 "Q1" H 6100 1425 50  0000 L CNN
-F 1 "Q_NMOS_SGD" H 6100 1325 50  0001 L CNN
-F 2 "Package_TO_SOT_THT:TO-92" H 6100 1475 50  0001 C CNN
-F 3 "~" H 5900 1375 50  0001 C CNN
-	1    5900 1375
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_PMOS_SGD Q2
-U 1 1 5E9B1FC7
-P 5900 3100
-AR Path="/5E4A013A/5E9B1FC7" Ref="Q2"  Part="1" 
-AR Path="/5E826FFF/5E9B1FC7" Ref="Q?"  Part="1" 
-F 0 "Q2" H 6100 3150 50  0000 L CNN
-F 1 "Q_PMOS_SGD" H 6100 3050 50  0001 L CNN
-F 2 "Package_TO_SOT_THT:TO-92" H 6100 3200 50  0001 C CNN
-F 3 "~" H 5900 3100 50  0001 C CNN
-	1    5900 3100
-	1    0    0    1   
-$EndComp
 $Comp
 L custom:PTH_1_mm TP?
 U 1 1 5E7E2C3C
@@ -951,7 +909,7 @@ F 3 "~" H 1800 6850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9950 2150 9950 3625
+	9950 2150 9950 3225
 Text Label 2300 7300 2    50   ~ 0
 DISCHARGE
 $Comp
@@ -980,37 +938,21 @@ AR Path="/5E4A00FF/5E8E14D7" Ref="R?"  Part="1"
 AR Path="/5E4A013A/5E8E14D7" Ref="R11"  Part="1" 
 AR Path="/5E826FFF/5E8E14D7" Ref="R?"  Part="1" 
 F 0 "R11" V 1700 6250 50  0000 L CNN
-F 1 "1k" V 1800 6300 39  0000 L CNN
+F 1 "1k0" V 1800 6300 39  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 6350 50  0001 C CNN
 F 3 "~" H 1800 6350 50  0001 C CNN
 	1    1800 6350
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 1375 5700 1375
+	5250 1800 5700 1800
 Wire Wire Line
-	6000 3400 5050 3400
+	6000 3000 5050 3000
 Wire Wire Line
-	5050 1075 6000 1075
+	5050 1500 6000 1500
 Wire Wire Line
 	6150 2250 6350 2250
-$Comp
-L Jumper:SolderJumper_2_Bridged JP?
-U 1 1 5EB0ACDA
-P 6600 1900
-AR Path="/5E4A00FF/5EB0ACDA" Ref="JP?"  Part="1" 
-AR Path="/5E4A013A/5EB0ACDA" Ref="JP1"  Part="1" 
-AR Path="/5E826FFF/5EB0ACDA" Ref="JP?"  Part="1" 
-F 0 "JP1" H 6600 1800 50  0000 C CNN
-F 1 "SolderJumper_Bridged" H 6600 1800 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6600 1900 50  0001 C CNN
-F 3 "~" H 6600 1900 50  0001 C CNN
-	1    6600 1900
-	-1   0    0    1   
-$EndComp
 Text Label 3700 2400 0    50   ~ 0
-TRIM
-Text Label 6500 2450 0    50   ~ 0
 TRIM
 Wire Wire Line
 	1800 6500 1800 6700
@@ -1024,7 +966,7 @@ AR Path="/5E4A00FF/5EB370FB" Ref="RV?"  Part="1"
 AR Path="/5E4A013A/5EB370FB" Ref="RV5"  Part="1" 
 AR Path="/5E826FFF/5EB370FB" Ref="RV?"  Part="1" 
 F 0 "RV5" V 1450 4450 50  0000 R CNN
-F 1 "1k" V 1550 4400 39  0000 R CNN
+F 1 "1k0" V 1550 4400 39  0000 R CNN
 F 2 "custom:CT6EP102" H 1550 4350 50  0001 C CNN
 F 3 "~" H 1550 4350 50  0001 C CNN
 	1    1550 4350
@@ -1038,7 +980,7 @@ AR Path="/5E4A00FF/5EB373D2" Ref="R?"  Part="1"
 AR Path="/5E4A013A/5EB373D2" Ref="R10"  Part="1" 
 AR Path="/5E826FFF/5EB373D2" Ref="R?"  Part="1" 
 F 0 "R10" V 1450 3850 50  0000 L CNN
-F 1 "1k" V 1550 3900 39  0000 L CNN
+F 1 "1k0" V 1550 3900 39  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1480 3950 50  0001 C CNN
 F 3 "~" H 1550 3950 50  0001 C CNN
 	1    1550 3950
@@ -1052,7 +994,7 @@ AR Path="/5E4A00FF/5EB390AA" Ref="R?"  Part="1"
 AR Path="/5E4A013A/5EB390AA" Ref="R12"  Part="1" 
 AR Path="/5E826FFF/5EB390AA" Ref="R?"  Part="1" 
 F 0 "R12" V 1450 4650 50  0000 L CNN
-F 1 "1k" V 1550 4700 39  0000 L CNN
+F 1 "1k0" V 1550 4700 39  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1480 4750 50  0001 C CNN
 F 3 "~" H 1550 4750 50  0001 C CNN
 	1    1550 4750
@@ -1100,44 +1042,6 @@ Wire Wire Line
 	1700 4350 1950 4350
 Text Label 2250 4350 2    50   ~ 0
 TRIM
-$Comp
-L Jumper:SolderJumper_2_Bridged JP?
-U 1 1 5EB9836F
-P 7050 2450
-AR Path="/5E4A00FF/5EB9836F" Ref="JP?"  Part="1" 
-AR Path="/5E4A013A/5EB9836F" Ref="JP2"  Part="1" 
-AR Path="/5E826FFF/5EB9836F" Ref="JP?"  Part="1" 
-F 0 "JP2" H 7050 2350 50  0000 C CNN
-F 1 "SolderJumper_Bridged" H 7050 2350 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7050 2450 50  0001 C CNN
-F 3 "~" H 7050 2450 50  0001 C CNN
-	1    7050 2450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6500 2450 6900 2450
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 5EBA5A64
-P 7050 2700
-F 0 "JP3" H 7050 2780 50  0000 C CNN
-F 1 "SolderJumper_Open" H 7050 2600 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7050 2700 50  0001 C CNN
-F 3 "~" H 7050 2700 50  0001 C CNN
-	1    7050 2700
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	7200 2700 7250 2700
-Wire Wire Line
-	7250 2700 7250 2450
-Connection ~ 7250 2450
-Wire Wire Line
-	7250 2450 7300 2450
-Text GLabel 6800 2700 0    50   Input ~ 0
-HI_Z_REF
-Wire Wire Line
-	6800 2700 6900 2700
 Wire Wire Line
 	1550 5000 1750 5000
 Wire Wire Line
@@ -1188,10 +1092,10 @@ L Device:R R?
 U 1 1 5F17FC5A
 P 3800 1775
 AR Path="/5E4A00FF/5F17FC5A" Ref="R?"  Part="1" 
-AR Path="/5E4A013A/5F17FC5A" Ref="R?"  Part="1" 
+AR Path="/5E4A013A/5F17FC5A" Ref="R13"  Part="1" 
 AR Path="/5E826FFF/5F17FC5A" Ref="R?"  Part="1" 
-F 0 "R?" V 3700 1675 50  0000 L CNN
-F 1 "1k" V 3800 1725 39  0000 L CNN
+F 0 "R13" V 3700 1675 50  0000 L CNN
+F 1 "1k0" V 3800 1725 39  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3730 1775 50  0001 C CNN
 F 3 "~" H 3800 1775 50  0001 C CNN
 	1    3800 1775
@@ -1207,10 +1111,10 @@ Wire Wire Line
 Wire Wire Line
 	4700 1225 4700 1300
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP2
 U 1 1 5F1B88E7
 P 3650 1775
-F 0 "JP?" H 3650 1855 50  0000 C CNN
+F 0 "JP2" H 3650 1855 50  0000 C CNN
 F 1 "SolderJumper_Open" H 3650 1675 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3650 1775 50  0001 C CNN
 F 3 "~" H 3650 1775 50  0001 C CNN
@@ -1232,101 +1136,70 @@ Connection ~ 3800 1575
 Wire Wire Line
 	3800 1575 3800 1450
 Wire Wire Line
-	5050 2300 5050 3400
+	5050 2300 5050 3000
 Wire Wire Line
-	5250 2400 5250 3100
+	5250 2400 5250 2700
 Wire Wire Line
-	5050 1075 5050 2300
+	5050 1500 5050 2300
 Wire Wire Line
-	5250 1375 5250 2100
-Wire Wire Line
-	6000 1975 6000 2050
+	5250 1800 5250 2100
 $Comp
-L Device:R R?
-U 1 1 5F21ADE3
-P 6000 1825
-AR Path="/5E4A00FF/5F21ADE3" Ref="R?"  Part="1" 
-AR Path="/5E4A013A/5F21ADE3" Ref="R?"  Part="1" 
-AR Path="/5E826FFF/5F21ADE3" Ref="R?"  Part="1" 
-F 0 "R?" V 5900 1725 50  0000 L CNN
-F 1 "1k" V 6000 1775 39  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5930 1825 50  0001 C CNN
-F 3 "~" H 6000 1825 50  0001 C CNN
-	1    6000 1825
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 1675 6000 1625
-$Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP1
 U 1 1 5F21ADEB
-P 5850 1825
-F 0 "JP?" H 5850 1905 50  0000 C CNN
-F 1 "SolderJumper_Open" H 5850 1725 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5850 1825 50  0001 C CNN
-F 3 "~" H 5850 1825 50  0001 C CNN
-	1    5850 1825
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	5850 1975 5850 2050
-Wire Wire Line
-	5850 1675 5850 1625
-Connection ~ 3250 3100
-Wire Wire Line
-	3250 2200 3250 3100
-Connection ~ 5050 2300
-$Comp
-L Device:R R?
-U 1 1 5F231B39
-P 6000 2650
-AR Path="/5E4A00FF/5F231B39" Ref="R?"  Part="1" 
-AR Path="/5E4A013A/5F231B39" Ref="R?"  Part="1" 
-AR Path="/5E826FFF/5F231B39" Ref="R?"  Part="1" 
-F 0 "R?" V 5900 2550 50  0000 L CNN
-F 1 "1k" V 6000 2600 39  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5930 2650 50  0001 C CNN
-F 3 "~" H 6000 2650 50  0001 C CNN
-	1    6000 2650
+P 6600 1900
+F 0 "JP1" H 6600 1980 50  0000 C CNN
+F 1 "SolderJumper_Open" H 6600 1800 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6600 1900 50  0001 C CNN
+F 3 "~" H 6600 1900 50  0001 C CNN
+	1    6600 1900
 	-1   0    0    -1  
 $EndComp
+Connection ~ 3250 2700
+Wire Wire Line
+	3250 2200 3250 2700
+Connection ~ 5050 2300
+Wire Wire Line
+	6000 2000 6000 2100
+Wire Wire Line
+	6000 2400 6000 2500
 $Comp
-L Jumper:SolderJumper_2_Open JP?
-U 1 1 5F231B41
-P 5850 2650
-F 0 "JP?" H 5850 2730 50  0000 C CNN
-F 1 "SolderJumper_Open" H 5850 2550 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5850 2650 50  0001 C CNN
-F 3 "~" H 5850 2650 50  0001 C CNN
-	1    5850 2650
-	0    -1   1    0   
+L Device:R R?
+U 1 1 5F1B7F83
+P 6600 2250
+AR Path="/5E4A00FF/5F1B7F83" Ref="R?"  Part="1" 
+AR Path="/5E4A013A/5F1B7F83" Ref="R3"  Part="1" 
+AR Path="/5E826FFF/5F1B7F83" Ref="R?"  Part="1" 
+F 0 "R3" V 6675 2150 50  0000 L CNN
+F 1 "1k0" V 6600 2200 39  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6530 2250 50  0001 C CNN
+F 3 "~" H 6600 2250 50  0001 C CNN
+	1    6600 2250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 5F1BEE27
+P 5900 1800
+F 0 "Q1" H 6100 1875 50  0000 L CNN
+F 1 "2N3904" H 6100 1800 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6100 1725 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5900 1800 50  0001 L CNN
+	1    5900 1800
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3906 Q2
+U 1 1 5F1C48AF
+P 5900 2700
+F 0 "Q2" H 6100 2775 50  0000 L CNN
+F 1 "2N3906" H 6100 2700 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6100 2625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 5900 2700 50  0001 L CNN
+	1    5900 2700
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 2800 5850 2875
-Wire Wire Line
-	5850 2500 5850 2450
-Wire Wire Line
-	6000 2400 6000 2450
-Wire Wire Line
-	6000 2800 6000 2875
-Wire Wire Line
-	6000 2875 5850 2875
-Connection ~ 6000 2875
-Wire Wire Line
-	6000 2875 6000 2900
-Wire Wire Line
-	5850 2450 6000 2450
-Connection ~ 6000 2450
-Wire Wire Line
-	6000 2450 6000 2500
-Wire Wire Line
-	5850 2050 6000 2050
-Wire Wire Line
-	6000 2100 6000 2050
-Connection ~ 6000 2050
-Wire Wire Line
-	5850 1625 6000 1625
-Wire Wire Line
-	6000 1575 6000 1625
-Connection ~ 6000 1625
+	7000 2450 7300 2450
+Text Label 7000 2450 0    50   ~ 0
+TRIM
 $EndSCHEMATC
