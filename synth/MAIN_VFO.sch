@@ -33,15 +33,15 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5E78F562
-P 5500 2700
+P 5500 3100
 AR Path="/5E4A00FF/5E78F562" Ref="R?"  Part="1" 
 AR Path="/5E4A013A/5E78F562" Ref="R4"  Part="1" 
 AR Path="/5E826FFF/5E78F562" Ref="R?"  Part="1" 
-F 0 "R4" V 5600 2600 50  0000 L CNN
-F 1 "3k3" V 5500 2650 39  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5430 2700 50  0001 C CNN
-F 3 "~" H 5500 2700 50  0001 C CNN
-	1    5500 2700
+F 0 "R4" V 5600 3000 50  0000 L CNN
+F 1 "3k3" V 5500 3050 39  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5430 3100 50  0001 C CNN
+F 3 "~" H 5500 3100 50  0001 C CNN
+	1    5500 3100
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
@@ -220,15 +220,15 @@ $EndComp
 $Comp
 L custom:PTH_1_mm TP?
 U 1 1 5E78F601
-P 4700 1700
+P 4700 1075
 AR Path="/5E4A00FF/5E78F601" Ref="TP?"  Part="1" 
 AR Path="/5E4A013A/5E78F601" Ref="TP3"  Part="1" 
 AR Path="/5E826FFF/5E78F601" Ref="TP?"  Part="1" 
-F 0 "TP3" V 4800 1650 50  0000 L BNN
-F 1 "PTH_1_mm" V 4850 1500 50  0001 L BNN
-F 2 "custom:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 4500 1450 50  0001 L BNN
-F 3 "" H 4700 1800 50  0001 L BNN
-	1    4700 1700
+F 0 "TP3" V 4800 1025 50  0000 L BNN
+F 1 "PTH_1_mm" V 4850 875 50  0001 L BNN
+F 2 "custom:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 4500 825 50  0001 L BNN
+F 3 "" H 4700 1175 50  0001 L BNN
+	1    4700 1075
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -260,11 +260,11 @@ F 3 "" H 7100 1700 50  0001 L BNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3250 3350 3250 2700
+	3250 3625 3250 3100
 Wire Wire Line
-	9950 3350 3250 3350
+	9950 3625 3250 3625
 Wire Wire Line
-	3800 2050 3800 2200
+	3800 1925 3800 2000
 Wire Wire Line
 	4000 2200 3800 2200
 Connection ~ 3800 2200
@@ -380,19 +380,16 @@ $EndComp
 Text GLabel 9250 5200 2    50   Output ~ 0
 VFO_OUT
 Wire Wire Line
-	5250 2700 5350 2700
+	5250 3100 5350 3100
 Wire Wire Line
-	5650 2700 5700 2700
+	5650 3100 5700 3100
 Text Notes 8000 4500 0    79   ~ 16
 AMP
 Wire Wire Line
 	3250 2200 3350 2200
-Connection ~ 5250 2700
+Connection ~ 5250 3100
 Wire Wire Line
-	3250 2700 5250 2700
-Connection ~ 3250 2700
-Wire Wire Line
-	3250 2700 3250 2200
+	3250 3100 5250 3100
 $Comp
 L Device:R R?
 U 1 1 5E78F672
@@ -465,7 +462,7 @@ Text Notes 7250 5800 0    79   ~ 16
 OFFSET
 Text Notes 5800 2300 2    79   ~ 16
 DUTY
-Text Notes 3650 1600 0    79   ~ 16
+Text Notes 3650 1075 0    79   ~ 16
 FREQ
 Wire Wire Line
 	8200 5300 8300 5300
@@ -523,9 +520,9 @@ F 3 "~" H 7950 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 2900 6000 3000
+	6000 3300 6000 3400
 Wire Wire Line
-	6000 1500 6000 1600
+	6000 1075 6000 1175
 $Comp
 L Device:R_POT RV?
 U 1 1 5E78F6B8
@@ -653,31 +650,29 @@ F 3 "~/home/dj/datasheets/MCP6004.pdf" H 4300 1850 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	4700 1850 4700 1900
+	4700 1300 4700 2300
+Connection ~ 4700 1300
 Wire Wire Line
-	4700 1900 4700 2300
-Connection ~ 4700 1900
-Wire Wire Line
-	3950 1900 4700 1900
+	3950 1300 4700 1300
 Wire Wire Line
 	8600 1850 8600 2150
 Wire Wire Line
 	9600 1850 9600 2350
-NoConn ~ 3800 1700
+NoConn ~ 3800 1100
 Wire Wire Line
-	3800 1750 3800 1700
+	3800 1150 3800 1100
 $Comp
 L Device:R_POT RV?
 U 1 1 5E78F70A
-P 3800 1900
+P 3800 1300
 AR Path="/5E4A00FF/5E78F70A" Ref="RV?"  Part="1" 
 AR Path="/5E4A013A/5E78F70A" Ref="RV1"  Part="1" 
 AR Path="/5E826FFF/5E78F70A" Ref="RV?"  Part="1" 
-F 0 "RV1" V 3700 2000 50  0000 R CNN
-F 1 "10k" V 3800 1950 39  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 3800 1900 50  0001 C CNN
-F 3 "~" H 3800 1900 50  0001 C CNN
-	1    3800 1900
+F 0 "RV1" V 3700 1400 50  0000 R CNN
+F 1 "10k" V 3800 1350 39  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 3800 1300 50  0001 C CNN
+F 3 "~" H 3800 1300 50  0001 C CNN
+	1    3800 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -822,27 +817,27 @@ Wire Wire Line
 $Comp
 L Device:Q_NMOS_SGD Q1
 U 1 1 5E7C5A19
-P 5900 1800
+P 5900 1375
 AR Path="/5E4A013A/5E7C5A19" Ref="Q1"  Part="1" 
 AR Path="/5E826FFF/5E7C5A19" Ref="Q?"  Part="1" 
-F 0 "Q1" H 6100 1850 50  0000 L CNN
-F 1 "Q_NMOS_SGD" H 6100 1750 50  0001 L CNN
-F 2 "Package_TO_SOT_THT:TO-92" H 6100 1900 50  0001 C CNN
-F 3 "~" H 5900 1800 50  0001 C CNN
-	1    5900 1800
+F 0 "Q1" H 6100 1425 50  0000 L CNN
+F 1 "Q_NMOS_SGD" H 6100 1325 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 6100 1475 50  0001 C CNN
+F 3 "~" H 5900 1375 50  0001 C CNN
+	1    5900 1375
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Q_PMOS_SGD Q2
 U 1 1 5E9B1FC7
-P 5900 2700
+P 5900 3100
 AR Path="/5E4A013A/5E9B1FC7" Ref="Q2"  Part="1" 
 AR Path="/5E826FFF/5E9B1FC7" Ref="Q?"  Part="1" 
-F 0 "Q2" H 6100 2750 50  0000 L CNN
-F 1 "Q_PMOS_SGD" H 6100 2650 50  0001 L CNN
-F 2 "Package_TO_SOT_THT:TO-92" H 6100 2800 50  0001 C CNN
-F 3 "~" H 5900 2700 50  0001 C CNN
-	1    5900 2700
+F 0 "Q2" H 6100 3150 50  0000 L CNN
+F 1 "Q_PMOS_SGD" H 6100 3050 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 6100 3200 50  0001 C CNN
+F 3 "~" H 5900 3100 50  0001 C CNN
+	1    5900 3100
 	1    0    0    1   
 $EndComp
 $Comp
@@ -956,7 +951,7 @@ F 3 "~" H 1800 6850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9950 2150 9950 3350
+	9950 2150 9950 3625
 Text Label 2300 7300 2    50   ~ 0
 DISCHARGE
 $Comp
@@ -973,8 +968,6 @@ F 3 "" H 1800 6050 50  0001 C CNN
 	1    1800 6050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4600 2300 4700 2300
 Wire Wire Line
 	1800 7000 1800 7300
 Wire Wire Line
@@ -994,27 +987,11 @@ F 3 "~" H 1800 6350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 2400 5250 2700
+	5250 1375 5700 1375
 Wire Wire Line
-	5250 1800 5700 1800
+	6000 3400 5050 3400
 Wire Wire Line
-	5250 1800 5250 2100
-Wire Wire Line
-	6000 3000 5050 3000
-Wire Wire Line
-	5050 1500 6000 1500
-Connection ~ 4700 2300
-Wire Wire Line
-	4700 2300 5050 2300
-Wire Wire Line
-	5050 2300 5050 3000
-Connection ~ 5050 2300
-Wire Wire Line
-	5050 1500 5050 2300
-Wire Wire Line
-	6000 2400 6000 2500
-Wire Wire Line
-	6000 2000 6000 2100
+	5050 1075 6000 1075
 Wire Wire Line
 	6150 2250 6350 2250
 $Comp
@@ -1206,4 +1183,150 @@ Wire Wire Line
 Wire Wire Line
 	5150 5300 5150 5600
 Connection ~ 6100 5600
+$Comp
+L Device:R R?
+U 1 1 5F17FC5A
+P 3800 1775
+AR Path="/5E4A00FF/5F17FC5A" Ref="R?"  Part="1" 
+AR Path="/5E4A013A/5F17FC5A" Ref="R13"  Part="1" 
+AR Path="/5E826FFF/5F17FC5A" Ref="R?"  Part="1" 
+F 0 "R13" V 3700 1675 50  0000 L CNN
+F 1 "1k" V 3800 1725 39  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3730 1775 50  0001 C CNN
+F 3 "~" H 3800 1775 50  0001 C CNN
+	1    3800 1775
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2300 4700 2300
+Connection ~ 4700 2300
+Wire Wire Line
+	4700 2300 5050 2300
+Wire Wire Line
+	3800 1625 3800 1575
+Wire Wire Line
+	4700 1225 4700 1300
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 5F1B88E7
+P 3650 1775
+F 0 "JP4" H 3650 1855 50  0000 C CNN
+F 1 "SolderJumper_Open" H 3650 1675 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3650 1775 50  0001 C CNN
+F 3 "~" H 3650 1775 50  0001 C CNN
+	1    3650 1775
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3650 1925 3650 2000
+Wire Wire Line
+	3650 2000 3800 2000
+Connection ~ 3800 2000
+Wire Wire Line
+	3800 2000 3800 2200
+Wire Wire Line
+	3650 1625 3650 1575
+Wire Wire Line
+	3650 1575 3800 1575
+Connection ~ 3800 1575
+Wire Wire Line
+	3800 1575 3800 1450
+Wire Wire Line
+	5050 2300 5050 3400
+Wire Wire Line
+	5250 2400 5250 3100
+Wire Wire Line
+	5050 1075 5050 2300
+Wire Wire Line
+	5250 1375 5250 2100
+Wire Wire Line
+	6000 1975 6000 2050
+$Comp
+L Device:R R?
+U 1 1 5F21ADE3
+P 6000 1825
+AR Path="/5E4A00FF/5F21ADE3" Ref="R?"  Part="1" 
+AR Path="/5E4A013A/5F21ADE3" Ref="R16"  Part="1" 
+AR Path="/5E826FFF/5F21ADE3" Ref="R?"  Part="1" 
+F 0 "R16" V 5900 1725 50  0000 L CNN
+F 1 "1k" V 6000 1775 39  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5930 1825 50  0001 C CNN
+F 3 "~" H 6000 1825 50  0001 C CNN
+	1    6000 1825
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1675 6000 1625
+$Comp
+L Jumper:SolderJumper_2_Open JP5
+U 1 1 5F21ADEB
+P 5850 1825
+F 0 "JP5" H 5850 1905 50  0000 C CNN
+F 1 "SolderJumper_Open" H 5850 1725 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5850 1825 50  0001 C CNN
+F 3 "~" H 5850 1825 50  0001 C CNN
+	1    5850 1825
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5850 1975 5850 2050
+Wire Wire Line
+	5850 1675 5850 1625
+Connection ~ 3250 3100
+Wire Wire Line
+	3250 2200 3250 3100
+Connection ~ 5050 2300
+$Comp
+L Device:R R?
+U 1 1 5F231B39
+P 6000 2650
+AR Path="/5E4A00FF/5F231B39" Ref="R?"  Part="1" 
+AR Path="/5E4A013A/5F231B39" Ref="R17"  Part="1" 
+AR Path="/5E826FFF/5F231B39" Ref="R?"  Part="1" 
+F 0 "R17" V 5900 2550 50  0000 L CNN
+F 1 "1k" V 6000 2600 39  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5930 2650 50  0001 C CNN
+F 3 "~" H 6000 2650 50  0001 C CNN
+	1    6000 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP7
+U 1 1 5F231B41
+P 5850 2650
+F 0 "JP7" H 5850 2730 50  0000 C CNN
+F 1 "SolderJumper_Open" H 5850 2550 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5850 2650 50  0001 C CNN
+F 3 "~" H 5850 2650 50  0001 C CNN
+	1    5850 2650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5850 2800 5850 2875
+Wire Wire Line
+	5850 2500 5850 2450
+Wire Wire Line
+	6000 2400 6000 2450
+Wire Wire Line
+	6000 2800 6000 2875
+Wire Wire Line
+	6000 2875 5850 2875
+Connection ~ 6000 2875
+Wire Wire Line
+	6000 2875 6000 2900
+Wire Wire Line
+	5850 2450 6000 2450
+Connection ~ 6000 2450
+Wire Wire Line
+	6000 2450 6000 2500
+Wire Wire Line
+	5850 2050 6000 2050
+Wire Wire Line
+	6000 2100 6000 2050
+Connection ~ 6000 2050
+Wire Wire Line
+	5850 1625 6000 1625
+Wire Wire Line
+	6000 1575 6000 1625
+Connection ~ 6000 1625
 $EndSCHEMATC
